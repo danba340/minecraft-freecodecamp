@@ -2,16 +2,16 @@
 
 This project is just me trying to mimic Minecraft in React.
 How i did it can be seen in this Youtube video:
-[![Video preview](https://img.youtube.com/vi/aWQmuTiThTs/0.jpg)](https://www.youtube.com/watch?v=aWQmuTiThTs)
+[![Video preview](https://img.youtube.com/vi/TODO/0.jpg)](https://www.youtube.com/watch?v=TODO)
 
-Demo: https://minecraft-js.vercel.app/
+Demo: TODO
 
 ## How to play?
 
 Currently it has 5 types of blocks: Grass, Wood, Log, Glass and Dirt.
 You switch blocks with numbers 1-5 on your keyboard.
 You navigate the world with the mouse and WASD.
-You can click to add blocks and Q+Click to remove blocks.
+You can click to add blocks and Alt+Click to remove blocks.
 You world is stored in your browsers local storage.
 
 ![Preview](preview.png 'Preview')
@@ -22,7 +22,7 @@ If you do so or just build a cool world. Please share it with me dbark@hey.com o
 
 In the project directory, you can run:
 
-### `npx start`
+### `npm install && npx start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
