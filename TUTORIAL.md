@@ -2,12 +2,12 @@
 - [] Sky
 - [] Textures and images
 - [] Ground
-- [] Player/First person view
-- [] Cursor
+- [] Player
+- [] First person view
 - [] Gravity
 - [] Movement
 - [] State management
 - [] Cubes
-- [] Block selector
+- [] Cube type selector
 - [] Save world in localstorage
 - [] Build a house
