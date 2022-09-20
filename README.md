@@ -2,7 +2,7 @@
 
 This project is just me trying to mimic Minecraft in React.
 How i did it can be seen in this Youtube video:
-[![Video preview](https://img.youtube.com/vi/TODO/0.jpg)](https://www.youtube.com/watch?v=TODO)
+[![Video preview](https://img.youtube.com/vi/TODO/0.jpg)](https://www.youtube.com/watch?v=qpOZup_3P_A)
 
 Demo: TODO
 
@@ -22,7 +22,7 @@ If you do so or just build a cool world. Please share it with me dbark@hey.com o
 
 In the project directory, you can run:
 
-### `npm install && npx start`
+### `npm install && npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
