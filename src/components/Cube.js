@@ -61,7 +61,7 @@ export const Cube = ({ position, texture }) => {
 			}}
 			ref={ref}
 		>
-			<boxBufferGeometry attach="geometry" />
+			<boxGeometry attach="geometry" />
 			<meshStandardMaterial
 				color={isHovered ? 'grey' : 'white'}
 				map={activeTexture}
