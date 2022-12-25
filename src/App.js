@@ -7,8 +7,11 @@ import { FPV } from './components/FPV'
 import { Cubes } from './components/Cubes'
 import { TextureSelector } from './components/TextureSelector';
 import { Menu } from './components/Menu';
+import { FacePosition } from './components/FacePosition';
+import { useState } from 'react';
 
 function App() {
+  const [facePos, setFacePos] = useState([0, 0])
   return (
     <>
       <Canvas>
@@ -16,7 +19,7 @@ function App() {
         <ambientLight intensity={0.5} />
         <FPV />
         <Physics>
-          <Player />
+          <Player facePos={facePos} />
           <Cubes />
           <Ground />
         </Physics>
@@ -24,6 +27,9 @@ function App() {
       <div className='absolute centered cursor'>+</div>
       <TextureSelector />
       <Menu />
+      <FacePosition onNewFacePosition={(pos) => {
+        setFacePos(pos)
+      }} />
     </>
   );
 }

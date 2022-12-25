@@ -7,7 +7,8 @@ import { useKeyboard } from "../hooks/useKeyboard"
 const JUMP_FORCE = 4;
 const SPEED = 4;
 
-export const Player = () => {
+export const Player = ({ facePos }) => {
+	const [faceX, faceY] = facePos
 	const { moveBackward, moveForward, moveRight, moveLeft, jump } = useKeyboard()
 
 	const { camera } = useThree()
@@ -28,7 +29,11 @@ export const Player = () => {
 	}, [api.position])
 
 	useFrame(() => {
-		camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[2]))
+
+		const faceOffset = new Vector3(-faceX * 3, -faceY * 2, 0).applyEuler(camera.rotation)
+		const posVector = new Vector3(pos.current[0], pos.current[1], pos.current[2])
+
+		camera.position.copy(new Vector3().subVectors(posVector, faceOffset))
 
 		const direction = new Vector3()
 
